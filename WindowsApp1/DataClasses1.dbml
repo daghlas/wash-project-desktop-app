@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="washproject" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=.;Initial Catalog=washproject;Integrated Security=True" SettingsObjectName="WindowsApp1.My.MySettings" SettingsPropertyName="washprojectConnectionString" Provider="System.Data.SqlClient" />
+  <Function Name="dbo.ManageQueue" Method="ManageQueue">
+    <Parameter Name="compoundid" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="name" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="mname" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="lnaMe" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="dob" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="sex" Type="System.String" DbType="VarChar(25)" />
+    <Parameter Name="ethnic" Type="System.String" DbType="VarChar(30)" />
+    <Parameter Name="category" Type="System.String" DbType="VarChar(5)" />
+    <Parameter Name="INDIVIDID" Parameter="iNDIVIDID" Type="System.String" DbType="VarChar(20)" />
+    <Parameter Name="pcs_date" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="officer" Type="System.String" DbType="VarChar(15)" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.wash1" Method="wash1">
+    <Parameter Name="INDIVIDID" Parameter="iNDIVIDID" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Gender" Parameter="gender" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="AllAgesNumber" Parameter="allAgesNumber" Type="System.Int32" DbType="Int" />
+    <Parameter Name="EducationLevel" Parameter="educationLevel" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="LivelihoodSource" Parameter="livelihoodSource" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="DescribeOther" Parameter="describeOther" Type="System.String" DbType="VarChar(200)" />
+    <Parameter Name="WaterPlace" Parameter="waterPlace" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="SourceDescription" Parameter="sourceDescription" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="PlaceSeason" Parameter="placeSeason" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="MainSources" Parameter="mainSources" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="MostUsed" Parameter="mostUsed" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="SecondMostUsed" Parameter="secondMostUsed" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="SourceLocation" Parameter="sourceLocation" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ExactLocation" Parameter="exactLocation" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="SourceReliability" Parameter="sourceReliability" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="NotReliableReason" Parameter="notReliableReason" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Payments" Parameter="payments" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="HouseContribution" Parameter="houseContribution" Type="System.String" DbType="VarChar(10)" />
+    <Parameter Name="RepairTime" Parameter="repairTime" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="PointCommitte" Parameter="pointCommitte" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Plumber" Parameter="plumber" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="VilllageHead" Parameter="villlageHead" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="SelfDone" Parameter="selfDone" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Nothing" Parameter="nothing" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="DontKnow" Parameter="dontKnow" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Other" Parameter="other" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="SpecifyOther" Parameter="specifyOther" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="TripTime" Parameter="tripTime" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Means" Parameter="means" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="SourceDistance" Parameter="sourceDistance" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="WeeklyTrips" Parameter="weeklyTrips" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="WaterQuality" Parameter="waterQuality" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="QualityNotAcceptable" Parameter="qualityNotAcceptable" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Reason" Parameter="reason" Type="System.String" DbType="VarChar(100)" />
+    <Parameter Name="WaterClean" Parameter="waterClean" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Boil" Parameter="boil" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Bleach" Parameter="bleach" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Strain" Parameter="strain" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="WaterFilter" Parameter="waterFilter" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="SolarDisinfection" Parameter="solarDisinfection" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Settle" Parameter="settle" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="TreatmentTablet" Parameter="treatmentTablet" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="CleanDontKnow" Parameter="cleanDontKnow" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="CleanOther" Parameter="cleanOther" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="CleanOtherSpecify" Parameter="cleanOtherSpecify" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="CommonTreatment" Parameter="commonTreatment" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="OtherCommonTreatment" Parameter="otherCommonTreatment" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="AlreadyTreated" Parameter="alreadyTreated" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="GoodQuality" Parameter="goodQuality" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="NoMaterials" Parameter="noMaterials" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="NotAware" Parameter="notAware" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="OtherReason" Parameter="otherReason" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="OtherReasonSpecify" Parameter="otherReasonSpecify" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="TreatMethod" Parameter="treatMethod" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="NotAbleToTreat" Parameter="notAbleToTreat" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="LastTreat" Parameter="lastTreat" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="SitePayment" Parameter="sitePayment" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="SiteCost" Parameter="siteCost" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Handwashing" Parameter="handwashing" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Laundry" Parameter="laundry" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Cooking" Parameter="cooking" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Bathing" Parameter="bathing" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Containers" Parameter="containers" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="NarrowWithLid" Parameter="narrowWithLid" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="NarrowWithoutLid" Parameter="narrowWithoutLid" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="WideWithLid" Parameter="wideWithLid" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="WideWithouLid" Parameter="wideWithouLid" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="DontKnowType" Parameter="dontKnowType" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="FoodStorage" Parameter="foodStorage" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ChemicalStorage" Parameter="chemicalStorage" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Fuel" Parameter="fuel" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ForWater" Parameter="forWater" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="OtherOriginalUse" Parameter="otherOriginalUse" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="UseNotKnown" Parameter="useNotKnown" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Spigot" Parameter="spigot" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Pour" Parameter="pour" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="LadleLike" Parameter="ladleLike" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="FetchAndKeep" Parameter="fetchAndKeep" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="FetchingContainers" Parameter="fetchingContainers" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ContainerVolume" Parameter="containerVolume" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="withLid" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="NoLid" Parameter="noLid" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="wideLid" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="WideNoLid" Parameter="wideNoLid" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IDKType" Parameter="iDKType" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="WaterAvailability" Parameter="waterAvailability" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="NotEnough" Parameter="notEnough" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="SpecifyNotEnough" Parameter="specifyNotEnough" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ToiletDesc" Parameter="toiletDesc" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="SharedToilet" Parameter="sharedToilet" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="PublicOrShared" Parameter="publicOrShared" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ToiletLocation" Parameter="toiletLocation" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ToiletType" Parameter="toiletType" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="SewageDirected" Parameter="sewageDirected" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Slabbed" Parameter="slabbed" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Emptied" Parameter="emptied" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="WhoEmptied" Parameter="whoEmptied" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="DisposalLocation" Parameter="disposalLocation" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Leaks" Parameter="leaks" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ChildrenPresence" Parameter="childrenPresence" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="DisposeToLatrine" Parameter="disposeToLatrine" Type="System.Int32" DbType="Int" />
+    <Parameter Name="RubbishPit" Parameter="rubbishPit" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="OutsideYard" Parameter="outsideYard" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Underground" Parameter="underground" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="WashAway" Parameter="washAway" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="LeftThere" Parameter="leftThere" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="UsesLatrine" Parameter="usesLatrine" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdkHow" Parameter="idkHow" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Diseases" Parameter="diseases" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Pollution" Parameter="pollution" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Hygienic" Parameter="hygienic" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Privacy" Parameter="privacy" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="CommunityStatus" Parameter="communityStatus" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Comfort" Parameter="comfort" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="IdkWhy" Parameter="idkWhy" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="HandWashPlace" Parameter="handWashPlace" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="OtherPlace" Parameter="otherPlace" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="WaterPresence" Parameter="waterPresence" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Detergents" Parameter="detergents" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="BeforeEating" Parameter="beforeEating" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="AfterToilet" Parameter="afterToilet" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="BeforeCooking" Parameter="beforeCooking" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="AfterEating" Parameter="afterEating" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="AfterFecesHandling" Parameter="afterFecesHandling" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="BeforeBreastFeed" Parameter="beforeBreastFeed" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="AfterBreastFeed" Parameter="afterBreastFeed" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Need" Parameter="need" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="CleanHands" Parameter="cleanHands" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="AvoidDisease" Parameter="avoidDisease" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="CommonPrac" Parameter="commonPrac" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="RemoveSmell" Parameter="removeSmell" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="OtherOpinion" Parameter="otherOpinion" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="OtherOpinionSpecify" Parameter="otherOpinionSpecify" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="OwnCattle" Parameter="ownCattle" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="OwnGoat" Parameter="ownGoat" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="OwnSheep" Parameter="ownSheep" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="OwnPig" Parameter="ownPig" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="OwnChicken" Parameter="ownChicken" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="OwnDucks" Parameter="ownDucks" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="OwnCats" Parameter="ownCats" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="OwnDogs" Parameter="ownDogs" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="OwnOther" Parameter="ownOther" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="SpecifyOwnOther" Parameter="specifyOwnOther" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="RoamCattle" Parameter="roamCattle" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="RoamGoat" Parameter="roamGoat" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="RoamSheep" Parameter="roamSheep" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="RoamPigs" Parameter="roamPigs" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="RoamChicken" Parameter="roamChicken" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="RoamDucks" Parameter="roamDucks" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="RoamCats" Parameter="roamCats" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="RoamDogs" Parameter="roamDogs" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ContactCattle" Parameter="contactCattle" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="contactGoat" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ContactSheep" Parameter="contactSheep" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ContactPigs" Parameter="contactPigs" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ContactChicken" Parameter="contactChicken" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ContactDucks" Parameter="contactDucks" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ContactCats" Parameter="contactCats" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ContactDogs" Parameter="contactDogs" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ContactFreq" Parameter="contactFreq" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="CareOutside" Parameter="careOutside" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="WaterSample" Parameter="waterSample" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Contact" Parameter="contact" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="FirstSource" Parameter="firstSource" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="SecondSource" Parameter="secondSource" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="CollectionDate" Parameter="collectionDate" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="FetchTime" Parameter="fetchTime" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="TimeUnknown" Parameter="timeUnknown" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="SampleTreated" Parameter="sampleTreated" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="WaterBoil" Parameter="waterBoil" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="WaterBleach" Parameter="waterBleach" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Waterstrain" Parameter="waterstrain" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="FilterWater" Parameter="filterWater" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="DisinfectionSolar" Parameter="disinfectionSolar" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="StandAndSettle" Parameter="standAndSettle" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="WaterTreatmentTable" Parameter="waterTreatmentTable" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="idkTreatment" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="TreatmentOther" Parameter="treatmentOther" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="SpecifyTreatmentOther" Parameter="specifyTreatmentOther" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="PH" Parameter="pH" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Turbidity" Parameter="turbidity" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ChlorineResidue" Parameter="chlorineResidue" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="type" Type="System.Byte" DbType="TinyInt" />
+    <Return Type="System.Int32" />
+  </Function>
+  <Function Name="dbo.water1" Method="water1">
+    <Parameter Name="individid" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="role" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="otherRole" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="duration" Type="System.Int32" DbType="Int" />
+    <Parameter Name="durationPeriod" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="workers" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="siteAge" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="seasonality" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Jan" Parameter="jan" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Feb" Parameter="feb" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Mar" Parameter="mar" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Apr" Parameter="apr" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="May" Parameter="may" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Jun" Parameter="jun" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Jul" Parameter="jul" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Aug" Parameter="aug" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Sep" Parameter="sep" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Oct" Parameter="oct" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Nov" Parameter="nov" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="Dec" Parameter="dec" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="delivery" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="deliverySpecified" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="origin" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="originSpecified" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="originTreatment" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="treatmentSpecified" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="deliveryFrequency" Type="System.Int32" DbType="Int" />
+    <Parameter Name="deliveryFrequncySpecify" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="customers" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="charges" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="storageContainers" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="dateLastFilled" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="cleanFilled" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="drinkTreat" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="drinkTreatSpecify" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="currentContainerTreat" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="dateTreated" Type="System.DateTime" DbType="Date" />
+    <Parameter Name="howTreated" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="howTreatedSpecify" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="sourceType" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="surfaceWater" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="siteDrinking" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="siteAccess" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="aMeter" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="twoMeters" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="plusTwoMeters" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="noPeople" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="customerCount" Type="System.Int32" DbType="Int" />
+    <Parameter Name="waterAvailability" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="waterUnavailable" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="livestockVisible" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="animalDroppings" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="waterAnimals" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="wasteWater" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="healthCare" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="farm" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="slaughterhouse" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="school" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="drainage" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="sampleTaken" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="sampleNotTaken" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="barcode1" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="barcode2" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="collectionTime" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ph" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="turbidy" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="chlorine" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="cattle" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="goats" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="sheep" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="pigs" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="chicken" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="ducks" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="cats" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="dogs" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="unknown" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="commonAnimal" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="totalAnimals" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="farmDescription" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="animalKeeping" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="animalWaste" Type="System.String" DbType="VarChar(50)" />
+    <Parameter Name="type" Type="System.Byte" DbType="TinyInt" />
+    <Return Type="System.Int32" />
+  </Function>
+</Database>
